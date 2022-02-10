@@ -3,7 +3,7 @@ import java.io.*;
 /**
 * <h1>Subtract Two Numbers!</h1>
 * The Subtract program implements an application that
-* simply subtract two given integer numbers and Prints
+* simply subtract two given integer numbers and prints
 * the output on the screen.
 * <p>
 
@@ -11,7 +11,7 @@ import java.io.*;
 * user friendly and it is assumed as a high quality code.
 *
 * @author Raditya Pasya Heryandi
-* @version 1.0
+* @version 1.1
 * @since 2022-02-10
 */
 public class soal1 {
