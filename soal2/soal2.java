@@ -1,4 +1,5 @@
 package soal2;
+import java.util.*;  
 
 /**
 * <h1>Soal 2 !</h1>
@@ -15,9 +16,15 @@ package soal2;
 */
 
 public class soal2{
-
+/**
+ * This method is used to check where some numbers it can be allocated into . This is
+ * a the simplest form of a class method, just to
+ * show the usage of various javadoc Tags.
+ * @param num1 Angka yang akan di cek
+ * @return int This returns sum of numA and numB.
+ */
     public void cek(long num1){
-    System.out.println(num1 + "can be fitted in: \n");
+    System.out.println(num1 + " can be fitted in:");
     if (num1 >= -128 && num1 <= 127) {
         System.out.println("byte");
         
@@ -36,4 +43,13 @@ public class soal2{
         System.out.println(num1 + " can not be fitted anywhere");
     }
     }
+
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukan angka yang ingin di cek: ");
+        long numA = input.nextLong();
+        soal2 a = new soal2();
+        a.cek(numA);
+        input.close();
+        }
 }
