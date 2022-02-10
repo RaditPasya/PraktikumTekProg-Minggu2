@@ -1,4 +1,5 @@
 package soal2;
+import java.io.IOException;
 import java.util.*;  
 
 /**
@@ -21,7 +22,6 @@ public class soal2{
  * a the simplest form of a class method, just to
  * show the usage of various javadoc Tags.
  * @param num1 Angka yang akan di cek
- * @return int This returns sum of numA and numB.
  */
     public void cek(long num1){
     System.out.println(num1 + " can be fitted in:");
@@ -44,7 +44,13 @@ public class soal2{
     }
     }
 
-    public static void main(String args[]) {
+    /**
+ * This is the main method which makes use of addNum method.
+ * @param args Unused.
+ * @exception IOException On input error.
+ * @see IOException
+ */
+    public static void main(String args[]) throws IOException {
         Scanner input = new Scanner(System.in);
         System.out.println("Masukan angka yang ingin di cek: ");
         long numA = input.nextLong();
