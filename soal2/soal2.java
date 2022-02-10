@@ -26,26 +26,26 @@ public class soal2{
     public void cek(long num1){
     System.out.println(num1 + " can be fitted in:");
     if (num1 >= -128 && num1 <= 127) {
-        System.out.println("byte");
+        System.out.println("* byte");
         
     }
     if (num1 >= -32768 && num1 <= 32767) {
-        System.out.println("short");
+        System.out.println("* short");
         
     }
     if (num1 >= -2147483648  && num1 <= 2147483647) {
-        System.out.println("int");
+        System.out.println("* int");
         
     }
     if (num1 >= -9223372036854775808L && num1 <= 9223372036854775807L) {
-        System.out.println("long");
+        System.out.println("* long");
     }else{
         System.out.println(num1 + " can not be fitted anywhere");
     }
     }
 
     /**
- * This is the main method which makes use of addNum method.
+ * This is the main method which makes use of cek fit method.
  * @param args Unused.
  * @exception IOException On input error.
  * @see IOException
