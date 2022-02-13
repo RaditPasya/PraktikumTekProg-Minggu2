@@ -1,4 +1,4 @@
-package soal2;
+
 import java.io.IOException;
 import java.util.*;  
 
@@ -24,7 +24,7 @@ public class soal2{
  * @param num1 Angka yang akan di cek
  */
     public void cek(long num1){
-    System.out.println(num1 + " can be fitted in:");
+    System.out.println("\n" + num1 + " can be fitted in:");
     if (num1 >= -128 && num1 <= 127) {
         System.out.println("* byte");
         
@@ -52,10 +52,24 @@ public class soal2{
  */
     public static void main(String args[]) throws IOException {
         Scanner input = new Scanner(System.in);
-        System.out.println("Masukan angka yang ingin di cek: ");
-        long numA = input.nextLong();
+        System.out.println("Masukan jumlah angka yang ingin di cek: ");
+        int jumlah = input.nextInt();
+        int[] numA= new int[jumlah];
         soal2 a = new soal2();
-        a.cek(numA);
+        
+
+        for (int i = 0; i < jumlah; i++) {
+        System.out.println("Masukan angka yang ingin di cek: ");
+        numA[i] = input.nextInt();    
+        }
+        for (int i=0; i<jumlah; i++){
+        a.cek(numA[i]);
+
+        }
+        
+
+        
+        
         input.close();
         }
 }
