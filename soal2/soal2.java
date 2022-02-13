@@ -6,7 +6,7 @@ import java.util.*;
 * <h1>Soal 2 !</h1>
 * Soal 2 - adalah soal yang diberikan di minggu kedua praktikum teknik pemrograman
 * tujuan dari soal 2 ini adalah mengecek apabila suatu input itu dapat masuk ke data type mana saja
-* dan ditunjukan di layar
+* dan ditunjukan di layar.
 * <p>
 * <b>Note:</b> Giving proper comments in your program makes it more
 * user friendly and it is assumed as a high quality code.
